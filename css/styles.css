@@ -203,6 +203,10 @@ body {
 .ready-projects {
   list-style: none;
 }
+/* скрываем загловки */
+.hidden-title {
+  display: none;
+}
 /* конец index.html */
 .studio-link {
   font-size: 14px;
