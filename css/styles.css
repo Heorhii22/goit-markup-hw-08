@@ -187,6 +187,12 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.footer-email:hover {
+  color: var(--third-text-color);
+}
+.footer-telephone:hover {
+  color: var(--third-text-color);
+}
 /* убераем точки в списке на превью */
 .nav-list,
 .contacts-list,
