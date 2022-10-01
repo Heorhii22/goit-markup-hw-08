@@ -6,28 +6,30 @@
   --bcg-cards: #ffffff;
   --bcg-hero-section: #f5f4fa;
   --bcg-dark: #2f303a;
+  --button-on-action-color: #188ce8;
 }
 body {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
 }
 .header-background {
-  background-color: #ffffff;
+  background-color: var(--secondary-text-color);
 }
 .logo-link {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: var(--third-text-color);
   text-decoration: none;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .logo-black {
   color: var(--primary-text-color);
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -55,10 +57,12 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-.portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   color: var(--third-text-color);
 }
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--third-text-color);
 }
 .email,
@@ -70,10 +74,10 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-.telephone:hover,
-.telephone.focus,
 .email:hover,
-.email:focus {
+.email:focus,
+.telephone:hover,
+.telephone:focus {
   color: var(--third-text-color);
 }
 .dark-bcg {
@@ -90,13 +94,17 @@ body {
 }
 .button-main {
   color: var(--secondary-text-color);
-  background-color: #2196f3;
+  background-color: var(--third-text-color);
   cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 .button-main:hover,
 .button-main:focus {
   color: var(--secondary-text-color);
-  background-color: #188ce8;
+  background-color: var(--button-on-action-color);
 }
 .features-list > .features {
   font-size: 14px;
@@ -131,7 +139,7 @@ body {
   letter-spacing: 0.03em;
 }
 .team-cards {
-  background-color: #f5f4fa;
+  background-color: var(--bcg-hero-section);
 }
 .team-list {
   background-color: var(--bcg-cards);
@@ -157,9 +165,9 @@ body {
 }
 .logo-white {
   color: var(--secondary-text-color);
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
@@ -187,10 +195,12 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer-email:hover {
-  color: var(--third-text-color);
-}
-.footer-telephone:hover {
+.map-adress:hover,
+.map-adress:focus,
+.footer-email:hover,
+.footer-email:focus,
+.footer-telephone:hover,
+.footer-telephone:focus {
   color: var(--third-text-color);
 }
 /* убераем точки в списке на превью */
@@ -205,11 +215,20 @@ body {
 }
 /* скрываем загловки */
 .hidden-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* конец index.html */
 .studio-link {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -238,9 +257,10 @@ body {
   color: var(--primary-text-color);
   background-color: var(--bcg-cards);
   cursor: pointer;
+  font-family: inherit;
 }
 .button-secondary:hover,
-.button-main:focus {
+.button-secondary:focus {
   color: var(--bcg-cards);
   background-color: var(--third-text-color);
 }
