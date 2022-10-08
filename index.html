@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -13,36 +17,46 @@
   </head>
   <body class="page">
     <header class="header-background">
-      <nav>
-        <a class="logo-link" href="./index.html" lang="en"
-          >Web<span class="logo-black">Studio</span></a
-        >
-        <ul class="nav-list">
-          <li>
-            <a href="./index.html" class="link current">Студія</a>
+      <div class="container-header">
+        <nav class="main-nav">
+          <a class="logo-link" href="./index.html" lang="en"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li class="list">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="list">
+              <a href="./portfolio.html" class="portfolio-link">Портфоліо</a>
+            </li>
+            <li class="list">
+              <a href="#" class="contacts-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list">
+          <li class="contact-elements">
+            <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="portfolio-link">Портфоліо</a>
-          </li>
-          <li>
-            <a href="#" class="contacts-link">Контакти</a>
+          <li class="contact-elements">
+            <a href="tel:+380961111111" class="telephone">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-list">
-        <li><a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="telephone">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="dark-bcg">
-        <h1 class="main-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
-        <button type="button" class="button-main">Замовити послугу</button>
+        <div class="container">
+          <h1 class="main-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
+          <div class="container button">
+            <button type="button" class="button-main">Замовити послугу</button>
+          </div>
+        </div>
       </section>
-      <section>
+      <section class="container">
         <h2 class="hidden-title">Особливості</h2>
         <ul class="features-list">
           <li class="features">
@@ -71,44 +85,46 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="our-projects container">
         <h2 class="projects">Чим ми займаємося</h2>
         <ul class="projects-list">
-          <li>
+          <li class="project-image">
             <img src="./images/img-1.jpg" alt="Комп'ютерні додатки" width="370" />
           </li>
-          <li>
+          <li class="project-image">
             <img src="./images/img-2.jpg" alt="Мобільні додатки" width="370" />
           </li>
-          <li>
+          <li class="project-image">
             <img src="./images/img-3.jpg" alt="Дизайнерські рішення" width="370" />
           </li>
         </ul>
       </section>
-      <section class="team-cards">
+      <section class="team-cards container">
         <h2 class="cards-title">Наша команда</h2>
-        <ul>
-          <li class="team-list">
-            <img src="./images/hero-1.jpg" alt="Product Designer" width="270" />
-            <h3 class="hero-title">Ігор Дем'яненко</h3>
-            <p lang="en" class="hero-speciality">Product Designer</p>
-          </li>
-          <li class="team-list">
-            <img src="./images/hero-2.jpg" alt="Frontend Developer" width="270" />
-            <h3 class="hero-title">Ольга Рєпіна</h3>
-            <p lang="en" class="hero-speciality">Frontend Developer</p>
-          </li>
-          <li class="team-list">
-            <img src="./images/hero-3.jpg" alt="Marketing" width="270" />
-            <h3 class="hero-title">Микола Тарасов</h3>
-            <p lang="en" class="hero-speciality">Marketing</p>
-          </li>
-          <li class="team-list">
-            <img src="./images/hero-4.jpg" alt="UI Designer" width="270" />
-            <h3 class="hero-title">Михайло Єрмаков</h3>
-            <p lang="en" class="hero-speciality">UI Designer</p>
-          </li>
-        </ul>
+        <div class="cards-flex">
+          <ul>
+            <li class="team-list">
+              <img src="./images/hero-1.jpg" alt="Product Designer" width="270" />
+              <h3 class="hero-title">Ігор Дем'яненко</h3>
+              <p lang="en" class="hero-speciality">Product Designer</p>
+            </li>
+            <li class="team-list">
+              <img src="./images/hero-2.jpg" alt="Frontend Developer" width="270" />
+              <h3 class="hero-title">Ольга Рєпіна</h3>
+              <p lang="en" class="hero-speciality">Frontend Developer</p>
+            </li>
+            <li class="team-list">
+              <img src="./images/hero-3.jpg" alt="Marketing" width="270" />
+              <h3 class="hero-title">Микола Тарасов</h3>
+              <p lang="en" class="hero-speciality">Marketing</p>
+            </li>
+            <li class="team-list">
+              <img src="./images/hero-4.jpg" alt="UI Designer" width="270" />
+              <h3 class="hero-title">Михайло Єрмаков</h3>
+              <p lang="en" class="hero-speciality">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-bcg">

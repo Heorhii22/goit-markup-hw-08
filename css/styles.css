@@ -23,6 +23,9 @@ body {
   font-size: 26px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-black {
   color: var(--primary-text-color);
@@ -125,12 +128,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--card-text-color);
   text-transform: none;
+  margin-top: 10px;
 }
 .projects {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+.our-projects {
+  background-color: var(--bcg-cards);
 }
 .cards-title {
   font-weight: 700;
@@ -282,3 +290,95 @@ body {
   letter-spacing: 0.03em;
 }
 /*portfolio end */
+
+/* позиционирование(флексы, контейнер..... */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-header {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+.nav-list .list + .list {
+  margin-left: 50px;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.link.current {
+  margin-left: 93px;
+}
+.email {
+  display: inline-block;
+  margin-right: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.main-title {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.button-main {
+  display: inline-block;
+  min-width: 216px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 26px;
+}
+.container.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 210px;
+}
+.features-list {
+  display: flex;
+  padding-top: 94px;
+  justify-content: space-between;
+}
+/* .features-list .li + li {
+  /* padding-bottom: 32px;
+  padding-top: 32px;
+} */
+.projects {
+  padding-top: 94px;
+}
+.projects-list {
+  display: flex;
+  margin-top: 50px;
+}
+.cards-title {
+  text-align: center;
+  padding-top: 94px;
+}
+.cards-flex > ul {
+  display: flex;
+}
