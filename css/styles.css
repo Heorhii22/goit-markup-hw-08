@@ -287,14 +287,12 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 .projects-description {
   color: var(--card-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 /*portfolio end */
 
@@ -464,4 +462,13 @@ p {
 }
 .flex-element {
   max-width: 370px;
+}
+.portfolio-projects {
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.projects-description {
+  margin-top: 4px;
+  margin-left: 24px;
+  padding-bottom: 24px;
 }
