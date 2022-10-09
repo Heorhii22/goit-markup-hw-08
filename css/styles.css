@@ -8,6 +8,7 @@
   --bcg-dark: #2f303a;
   --button-on-action-color: #188ce8;
   --border-footer: #ececec;
+  --border-projects-cards: #eeeeee;
 }
 body {
   color: var(--primary-text-color);
@@ -286,12 +287,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .projects-description {
   color: var(--card-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /*portfolio end */
 
@@ -432,11 +435,33 @@ p {
 .button-list {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 .button-secondary {
   display: block;
+  min-width: 73px;
   margin-left: 8px;
+  padding: 8px 22px;
+  border-radius: 4px;
+  background-color: var(--bcg-hero-section);
+  border: 1px solid var(--secondary-text-color);
 }
-.button-list li:first-child {
+.button-secondary.current {
   margin-left: 0px;
+  padding: 8px 25px;
+}
+.ready-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+.ready-projects li {
+  border-bottom: 1px solid var(--border-projects-cards);
+  border-left: 1px solid var(--border-projects-cards);
+  border-right: 1px solid var(--border-projects-cards);
+}
+.flex-element {
+  max-width: 370px;
 }
