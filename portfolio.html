@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -13,29 +17,35 @@
   </head>
   <body class="page">
     <header class="header-background">
-      <nav>
-        <a class="logo-link" href="./index.html" lang="en"
-          >Web<span class="logo-black">Studio</span></a
-        >
-        <ul class="nav-list">
-          <li>
-            <a href="./index.html" class="studio-link">Студія</a>
+      <div class="container-header">
+        <nav class="main-nav">
+          <a class="logo-link" href="./index.html" lang="en"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li class="list">
+              <a href="./index.html" class="studio-link wide-hover">Студія</a>
+            </li>
+            <li class="list">
+              <a href="./portfolio.html" class="portfolio current wide-hover">Портфоліо</a>
+            </li>
+            <li class="list">
+              <a href="#" class="contacts-link wide-hover">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list">
+          <li class="contact-elements">
+            <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="portfolio current">Портфоліо</a>
-          </li>
-          <li>
-            <a href="#" class="contacts-link">Контакти</a>
+          <li class="contact-elements">
+            <a href="tel:+380961111111" class="telephone">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-list">
-        <li><a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="telephone">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="container">
         <h1 class="hidden-title">Портфоліо</h1>
         <ul class="button-list">
           <li><button type="button" class="button-secondary current">Усі</button></li>
@@ -101,24 +111,30 @@
       </section>
     </main>
     <footer class="footer-bcg">
-      <a class="logo-link" href="./index.html" lang="en"
-        >Web<span class="logo-white">Studio</span></a
-      >
-      <address>
-        <ul class="contacts-list">
-          <li>
-            <a
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="map-adress"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@devstudio.com" class="footer-email">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="footer-telephone">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo-link footer-logo" href="./index.html" lang="en"
+          >Web<span class="logo-white">Studio</span></a
+        >
+        <address>
+          <ul class="contacts-list footer-contacts">
+            <li class="footer-info">
+              <a
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="map-adress"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-info">
+              <a href="mailto:info@devstudio.com" class="footer-email">info@devstudio.com</a>
+            </li>
+            <li class="footer-info">
+              <a href="tel:+380961111111" class="footer-telephone">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

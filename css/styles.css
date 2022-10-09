@@ -7,6 +7,7 @@
   --bcg-hero-section: #f5f4fa;
   --bcg-dark: #2f303a;
   --button-on-action-color: #188ce8;
+  --border-footer: #ececec;
 }
 body {
   color: var(--primary-text-color);
@@ -14,6 +15,10 @@ body {
 }
 .header-background {
   background-color: var(--secondary-text-color);
+  border: 1px solid var(--border-footer);
+  border-top: var(--secondary-text-color);
+  border-right: var(--secondary-text-color);
+  border-left: var(--secondary-text-color);
 }
 .logo-link {
   font-family: 'Raleway', sans-serif;
@@ -24,8 +29,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 .logo-black {
   color: var(--primary-text-color);
@@ -51,8 +54,7 @@ body {
 .nav-list .link:focus {
   color: var(--third-text-color);
 }
-.portfolio-link,
-.contacts-link {
+.wide-hover {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -161,12 +163,14 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .hero-speciality {
   color: var(--card-text-color);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .footer-bcg {
   background-color: var(--bcg-dark);
@@ -291,7 +295,7 @@ body {
 }
 /*portfolio end */
 
-/* позиционирование(флексы, контейнер..... */
+/* позиционирование Studio (флексы, контейнер..... */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -308,11 +312,17 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-list {
   display: flex;
   align-items: center;
   padding-left: 0px;
+}
+.nav-list .wide-hover {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-list .list + .list {
   margin-left: 50px;
@@ -322,7 +332,8 @@ body {
   align-items: center;
   margin-left: auto;
 }
-.link.current {
+.link.current,
+.studio-link {
   margin-left: 93px;
 }
 .email {
@@ -339,6 +350,9 @@ ul,
 p {
   margin: 0;
   padding: 0;
+}
+.features-list li:first-child {
+  margin-left: 0;
 }
 .main-title {
   width: 1200px;
@@ -362,12 +376,12 @@ p {
 .features-list {
   display: flex;
   padding-top: 94px;
-  justify-content: space-between;
 }
-/* .features-list .li + li {
-  /* padding-bottom: 32px;
-  padding-top: 32px;
-} */
+.features {
+  display: block;
+  margin-left: 30px;
+}
+
 .projects {
   padding-top: 94px;
 }
@@ -375,10 +389,54 @@ p {
   display: flex;
   margin-top: 50px;
 }
+.project-image {
+  display: block;
+  margin-left: 30px;
+  padding-bottom: 94px;
+}
+.projects-list li:first-child {
+  margin-left: 0px;
+}
 .cards-title {
   text-align: center;
   padding-top: 94px;
 }
 .cards-flex > ul {
   display: flex;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.team-members li:first-child {
+  margin-left: 0px;
+}
+.footer-logo {
+  padding-top: 60px;
+}
+.footer-contacts {
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+.footer-info {
+  display: block;
+  margin-top: 9px;
+}
+.footer-contacts li:first-child {
+  margin-top: 0px;
+}
+/* ПОЗИЦИОНИРОВАНИЕ PORTFOLIO */
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.button-secondary {
+  display: block;
+  margin-left: 8px;
+}
+.button-list li:first-child {
+  margin-left: 0px;
 }
