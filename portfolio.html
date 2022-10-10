@@ -35,71 +35,99 @@
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li class="contact-elements">
+          <li class="contact-email">
             <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
           </li>
-          <li class="contact-elements">
+          <li class="contact-phone">
             <a href="tel:+380961111111" class="telephone">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="container">
-        <h1 class="hidden-title">Портфоліо</h1>
-        <ul class="button-list">
-          <li><button type="button" class="button-secondary current">Усі</button></li>
-          <li><button type="button" class="button-secondary">Веб-сайти</button></li>
-          <li><button type="button" class="button-secondary">Додатки</button></li>
-          <li><button type="button" class="button-secondary">Дизайн</button></li>
-          <li><button type="button" class="button-secondary">Маркетинг</button></li>
-        </ul>
-        <div class="flex-container">
+      <section class="main-portfolio">
+        <div class="container">
+          <h1 class="hidden-title">Портфоліо</h1>
+          <ul class="button-list">
+            <li class="button-no-margin">
+              <button type="button" class="button-secondary current">Усі</button>
+            </li>
+            <li class="button-margin">
+              <button type="button" class="button-secondary">Веб-сайти</button>
+            </li>
+            <li class="button-margin">
+              <button type="button" class="button-secondary">Додатки</button>
+            </li>
+            <li class="button-margin">
+              <button type="button" class="button-secondary">Дизайн</button>
+            </li>
+            <li class="button-margin">
+              <button type="button" class="button-secondary">Маркетинг</button>
+            </li>
+          </ul>
           <ul class="ready-projects">
             <li class="flex-element">
               <img src="./images/img-portfolio1.jpg" alt="веб-сайт" />
-              <h2 class="portfolio-projects">Технокряк</h2>
-              <p class="projects-description">Веб-сайт</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Технокряк</h2>
+                <p class="projects-description">Веб-сайт</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio2.jpg" alt="постер баскетбольної команди" />
-              <h2 class="portfolio-projects">Постер New Orlean vs Golden Star</h2>
-              <p class="projects-description">Дизайн</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Постер New Orlean vs Golden Star</h2>
+                <p class="projects-description">Дизайн</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio3.jpg" alt="додаток ресторану" />
-              <h2 class="portfolio-projects">Ресторан Seafood</h2>
-              <p class="projects-description">Додаток</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Ресторан Seafood</h2>
+                <p class="projects-description">Додаток</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio4.jpg" alt="студійні навушники" />
-              <h2 class="portfolio-projects">Проєкт Prime</h2>
-              <p class="projects-description">Маркетинг</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Проєкт Prime</h2>
+                <p class="projects-description">Маркетинг</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio5.jpg" alt="дві коробки" />
-              <h2 class="portfolio-projects">Проєкт Boxes</h2>
-              <p class="projects-description">Додаток</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Проєкт Boxes</h2>
+                <p class="projects-description">Додаток</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio6.jpg" alt="веб-сайт на чорному тлі монітору" />
-              <h2 class="portfolio-projects">Inspiration has no Borders</h2>
-              <p class="projects-description">Веб-сайт</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Inspiration has no Borders</h2>
+                <p class="projects-description">Веб-сайт</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio7.jpg" alt="лімітоване видання журналу" />
-              <h2 class="portfolio-projects">Видання Limited Edition</h2>
-              <p class="projects-description">Дизайн</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Видання Limited Edition</h2>
+                <p class="projects-description">Дизайн</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio8.jpg" alt="підвіска лаб" />
-              <h2 class="portfolio-projects">Проєкт LAB</h2>
-              <p class="projects-description">Маркетинг</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Проєкт LAB</h2>
+                <p class="projects-description">Маркетинг</p>
+              </div>
             </li>
             <li class="flex-element">
               <img src="./images/img-portfolio9.jpg" alt="додаток для пк" />
-              <h2 class="portfolio-projects">Growing Business</h2>
-              <p class="projects-description">Додаток</p>
+              <div class="projects-info">
+                <h2 class="portfolio-projects">Growing Business</h2>
+                <p class="projects-description">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -110,7 +138,7 @@
         <a class="logo-link footer-logo" href="./index.html" lang="en"
           >Web<span class="logo-white">Studio</span></a
         >
-        <address>
+        <address class="contact-info">
           <ul class="contacts-list footer-contacts">
             <li class="footer-info">
               <a
