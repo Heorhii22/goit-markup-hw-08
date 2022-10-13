@@ -106,6 +106,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  border: none;
 }
 .button-main:hover,
 .button-main:focus {
@@ -483,4 +484,16 @@ img {
 .projects-info {
   padding: 20px 24px;
   border: 1px solid var(--border-projects-cards);
+}
+/* svg, фоновые изображения */
+.dark-bcg {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/Img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* оптимизировать изображение через сквош! */
 }
