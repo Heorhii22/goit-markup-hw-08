@@ -189,10 +189,10 @@ body {
 .casual-clients {
 	font-weight: 700;
 	line-height: 1.2;
+	font-size: 36px;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
-	padding-top: 94px;
 }
 .footer-bcg {
 	background-color: var(--bcg-dark);
@@ -302,6 +302,7 @@ ul {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
+	color: var(--primary-text-color);
 	letter-spacing: 0.06em;
 }
 .projects-description {
@@ -493,9 +494,12 @@ img {
 .flex-element {
 	max-width: 370px;
 }
-.flex-element:hover {
+.flex-element-link {
+	display: block;
+	text-decoration: none;
+}
+.flex-element-link:hover, .flex-element-link:focus {
   box-shadow: var(--project-card-shadow);
-  cursor: pointer;
 }
 .projects-description {
 	margin-top: 4px;
@@ -541,14 +545,14 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
 }
 .socials-link {
 	display: flex;
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
-	gap: 10px;
-	margin-top: 10px;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--secondary-text-color);
@@ -608,12 +612,15 @@ img {
 .box-logo {
 	display: block;
 }
+.clients {
+	padding-bottom: 94px;
+	padding-top: 94px;
+}
 .companies-list {
 	display: flex;
 	justify-content: center;
 	gap: 30px;
 	margin-top: 50px;
-	padding-bottom: 94px;
 }
 .company-logo {
 	display: flex;
@@ -636,4 +643,3 @@ img {
 	border: 1px solid var(--third-text-color);
 }
 
-/* добавить тень в карточки и изменения хедер+футер в портфолио */
