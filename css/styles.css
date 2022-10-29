@@ -754,6 +754,9 @@ img {
 	background-color: var(--secondary-text-color);
 }
 .close-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -874,18 +877,13 @@ img {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.modal-button-box {
-	display: flex;
-	width: 448px;
-	height: 50px;
-	align-items: center;
-	justify-content: center;
-	margin-top: 30px;
-}
 .modal-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	min-width: 200px;
 	height: 50px;
 	font-size: 16px;
@@ -947,11 +945,10 @@ img {
 }
 .send-icon {
 	display: flex;
-	padding-left: 10px;
+	margin-left: 10px;
 	fill: var(--secondary-text-color);
 }
 .button-form-footer:hover,
 .button-form-footer:focus {
 	background-color: var(--button-on-action-color);
 }
-/* убрать линк с кнопки и оставить только свг */
