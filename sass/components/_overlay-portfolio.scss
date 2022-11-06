@@ -1,0 +1,63 @@
+.ready-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.ready-projects__item {
+    max-width: 370px;
+}
+
+.ready-projects__link {
+    display: block;
+    text-decoration: none;
+
+    &:hover, &:focus {
+    box-shadow: $project-card-shadow;
+    }
+}
+.ready-projects__info {
+    padding: 20px 24px;
+    border: 1px solid $border-projects-cards;
+    border-top: none;
+}
+.ready-projects__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: $primary-text-color;
+    letter-spacing: 0.06em;
+}
+
+.ready-projects__description {
+    margin-top: 4px;
+    color: $card-text-color;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    background-color: $third-text-color;
+    color: $secondary-text-color;
+
+    .ready-projects__link:hover &, .ready-projects__link:focus & {
+    transform: translateY(0);
+    }
+}

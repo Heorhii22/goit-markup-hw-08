@@ -1,0 +1,95 @@
+$primary-text-color: #212121;
+$secondary-text-color: #ffffff;
+$third-text-color: #2196f3;
+$card-text-color: #757575;
+$bcg-cards: #ffffff;
+$bcg-hero-section: #f5f4fa;
+$bcg-gradient-hero: rgba(47, 48, 58, 0.4);
+$bcg-dark: #2f303a;
+$button-on-action-color: #188ce8;
+$border-footer: #ececec;
+$color-contacts-footer: rgba(255, 255, 255, 0.6);
+$border-projects-cards: #eeeeee;
+$contact-icon-no-hover: #757575;
+$icons-primary-color: #afb1b8;
+$team-cards-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+$button-secondary-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+$project-card-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+$footer-socials-background: rgba(255, 255, 255, 0.1);
+$footer-form-input-border: rgba(255, 255, 255, 0.3);
+$main-fonts: "Roboto", sans-serif;
+$backdrop-modal: rgba(0, 0, 0, 0.2);
+$close-btn-border:rgba(0, 0, 0, 0.1);
+$modal-input-border: rgba(33, 33, 33, 0.2);
+$modal-btn-shadow: rgba(0, 0, 0, 0.15);
+
+body {
+    color: $primary-text-color;
+    font-family: $main-fonts;
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav__link,
+.contacts-list__link,
+.contacts-list__icon,
+.button-main,
+.socials-team__link,
+.company__link,
+.adress-info__link,
+.adress-info__email,
+.adress-info__tel,
+.socials-footer__link,
+.buttons__secondary,
+.ready-projects__link,
+.modal__commentary,
+.modal__icon,
+.modal__info-input,
+.button-form,
+.modal-button,
+.close-btn__icon {
+    transition-property: color, fill, background-color, border, border-color, box-shadow, background-image;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

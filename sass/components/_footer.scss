@@ -1,0 +1,117 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $bcg-dark;
+}
+.adress-box {
+    display: block;
+}
+.logo {
+    display: block;
+}
+.logo__link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    color: $third-text-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.logo__footer {
+    color: $secondary-text-color;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.contacts-footer {
+    margin-top: 20px;
+}
+.adress-info {
+    display: block;
+}
+
+.adress-info__item {
+    display: block;
+    margin-top: 9px;
+}
+
+.adress-info li:first-child {
+    margin-top: 0px;
+}
+.adress-info__link {
+    color: $secondary-text-color;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    &:hover, &:focus {
+    color: $third-text-color;
+   }
+}
+
+.adress-info__email {
+    color: $color-contacts-footer;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    &:hover, &:focus {
+    color: $third-text-color;
+    }
+}
+
+.adress-info__tel {
+    color: $color-contacts-footer;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    &:hover, &:focus {
+    color: $third-text-color;
+    }
+}
+.socials-box {
+    display: block;
+    margin-left: 70px;
+}
+.socials-box__title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 20px;
+}
+.socials-footer {
+    display: flex;
+    gap: 10px;
+}
+.socials-footer__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    fill: $secondary-text-color;
+    background-color: $footer-socials-background;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover, &:focus {
+    background-color: $third-text-color;
+    }
+}

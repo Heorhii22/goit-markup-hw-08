@@ -1,0 +1,72 @@
+.team-cards {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $bcg-hero-section;
+}
+.team-cards__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.team-members {
+    display: flex;
+    margin-top: 50px;
+}
+
+.team-members li:first-child {
+    margin-left: 0px;
+}
+.team-members__item {
+    display: block;
+    margin-left: 30px;
+    background-color: $bcg-cards;
+    box-shadow: $team-cards-shadow;
+    border-radius: 0px 0px 4px 4px;
+}
+.cards-info {
+    padding: 30px;
+}
+.cards-info__title {
+    margin-bottom: 10px;
+    color: $primary-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.cards-info__speciality {
+    color: $card-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.socials-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socials-team__link {
+    display: flex;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-text-color;
+    fill: $icons-primary-color;
+    cursor: pointer;
+}
+
+.socials-team__link:hover,
+.socials-team__link:focus {
+    fill: $secondary-text-color;
+    background-color: $third-text-color;
+}
