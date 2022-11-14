@@ -17,6 +17,7 @@
     padding: 48px 40px;
     background-color: $secondary-text-color;
     overflow: hidden;
+    pointer-events: none;
     z-index: 999;
     &.is-open {
     display: block;

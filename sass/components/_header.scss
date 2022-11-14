@@ -2,29 +2,27 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 480px;
+    margin: auto auto;
     @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
-    margin: 0 auto;
     }
     @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin: 0 auto;
     }
 }
 .header__background {
+    margin: 0 auto;
     background-color: $secondary-text-color;
     border: 1px solid $border-footer;
     border-top: $secondary-text-color;
     border-right: $secondary-text-color;
     border-left: $secondary-text-color;
-    width: 450px;
     @media screen and (min-width: 768px){
     width: 768px;    
     }
         @media screen and (min-width: 1200px) {
             width: 1200px;
-            margin: 0 auto;
         }
 }
 .nav {
