@@ -1,13 +1,13 @@
 .hero {
     min-width: 480px;
     height: 400px;
-    background-image: linear-gradient(to right, $bcg-gradient-hero, $bcg-gradient-hero), url(../../images/background-hero.jpg);
+    background-image: linear-gradient(to right, $bcg-gradient-hero, $bcg-gradient-hero), url(../images/background-hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: $bcg-dark;
     @media screen and(min-resolution: 192dpi) {
-    background-image: url(../../images/bacground-hero@2x.jpg);    
+    background-image: url(../images/bacground-hero@2x.jpg);    
     }
     @media screen and (min-width: 1200px) {
             min-height: 600px;
