@@ -23,6 +23,48 @@
 						Web
 						<span class="nav__brend">Studio</span>
 					</a>
+					<button class="menu-button js-open-menu">
+						<svg class="menu-button__icon" width="40px" height="40px">
+							<use href="./images/icons.svg#icon-menu"></use>
+						</svg>
+					</button>
+					<div class="mobile-menu js-menu-container">
+						<div class="container">
+							<button class="mobile-menu__close-btn js-close-menu">
+								<svg class="mobile-menu__close-icon" width="19" height="19">
+									<use href="./images/icons.svg#icon-close-button"></use>
+								</svg>
+							</button>
+							<nav class="mobile-menu__nav">
+								<ul>
+									<li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Студія</a></li>
+									<li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+									<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+								</ul>
+							</nav>
+							<ul class="mobile-menu__contacts">
+								<li><a href="tel:+380961111111" class="mobile-menu__tel">+38 096 111 11 11</a></li>
+								<li><a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a></li>
+							</ul>
+							<ul class="mobile-menu__socials">
+								<li class="mobile-menu__socials-item">
+									<a href="#" class="mobile-menu__socials-link">Instagram</a>
+									<span class="mobile-menu__socials-between">|</span>
+								</li>
+								<li class="mobile-menu__socials-item">
+									<a href="#" class="mobile-menu__socials-link">Twitter</a>
+									<span class="mobile-menu__socials-between">|</span>
+								</li>
+								<li class="mobile-menu__socials-item">
+									<a href="#" class="mobile-menu__socials-link">Facebook</a>
+									<span class="mobile-menu__socials-between">|</span>
+								</li>
+								<li class="mobile-menu__socials-item">
+									<a href="#" class="mobile-menu__socials-link">LinkedIn</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<ul class="nav__links">
 						<li class="nav__item">
 							<a href="./index.html" class="nav__link nav__link--current">Студія</a>
@@ -68,7 +110,7 @@
 								</svg>
 							</button>
 							<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-							<form>
+							<form class="modal__form">
 								<label class="modal__form-name" for="name">Ім'я</label>
 								<div class="modal__item">
 									<input class="modal__info-input" id="name" name="name" type="text" />
@@ -172,7 +214,7 @@
 					<h2 class="team-cards__title">Наша команда</h2>
 					<ul class="team-members">
 						<li class="team-members__item">
-							<img src="./images/hero-1.jpg" alt="Product Designer" width="270" />
+							<img class="team-members__photo" src="./images/hero-1.jpg" alt="Product Designer" />
 							<div class="cards-info">
 								<h3 class="cards-info__title">Ігор Дем'яненко</h3>
 								<p lang="en" class="cards-info__speciality">Product Designer</p>
@@ -209,7 +251,7 @@
 							</div>
 						</li>
 						<li class="team-members__item">
-							<img src="./images/hero-2.jpg" alt="Frontend Developer" width="270" />
+							<img class="team-members__photo" src="./images/hero-2.jpg" alt="Frontend Developer" />
 							<div class="cards-info">
 								<h3 class="cards-info__title">Ольга Рєпіна</h3>
 								<p lang="en" class="cards-info__speciality">Frontend Developer</p>
@@ -246,7 +288,7 @@
 							</div>
 						</li>
 						<li class="team-members__item">
-							<img src="./images/hero-3.jpg" alt="Marketing" width="270" />
+							<img class="team-members__photo" src="./images/hero-3.jpg" alt="Marketing" />
 							<div class="cards-info">
 								<h3 class="cards-info__title">Микола Тарасов</h3>
 								<p lang="en" class="cards-info__speciality">Marketing</p>
@@ -283,7 +325,7 @@
 							</div>
 						</li>
 						<li class="team-members__item">
-							<img src="./images/hero-4.jpg" alt="UI Designer" width="270" />
+							<img class="team-members__photo" src="./images/hero-4.jpg" alt="UI Designer" />
 							<div class="cards-info">
 								<h3 class="cards-info__title">Михайло Єрмаков</h3>
 								<p lang="en" class="cards-info__speciality">UI Designer</p>
@@ -323,7 +365,7 @@
 				</div>
 			</section>
 			<section class="clients">
-				<div class="container">
+				<div class="container container--companies">
 					<h2 class="clients__title">Постійні клієнти</h2>
 					<ul class="company">
 						<li class="company__item">
@@ -418,7 +460,7 @@
 				<div class="footer-form">
 					<p class="footer-form__title">підпишіться на розсилку</p>
 					<div class="footer-form__box">
-						<form name="footer-form">
+						<form name="footer-form" class="footer-form__info">
 							<label for="email-feedback" name="footer-form"></label>
 							<input class="footer-form__input" id="email-feedback" name="footer-form" placeholder="E-mail" />
 							<button class="button-form" type="submit">
@@ -433,5 +475,6 @@
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

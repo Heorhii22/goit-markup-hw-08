@@ -1,6 +1,10 @@
 .projects {
+    display: none;
     background-color: $bcg-cards;
     padding-bottom: 94px;
+    @media screen and (min-width: 1200px) {
+    display: block;    
+    }
 }
 .projects__title {
     font-size: 36px;

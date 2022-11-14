@@ -13,14 +13,30 @@
 .company {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+    display: flex;
     margin-top: 50px;
+    gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+    }
 }
 
 .company__item {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
+    @media screen and (min-width: 768px) {
+    width: 226px;    
+    }
+    @media screen and (min-width: 1200px) {
+    width: 170px;    
+    }
 }
 
 .company__link {

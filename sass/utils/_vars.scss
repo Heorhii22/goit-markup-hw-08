@@ -33,7 +33,7 @@ body {
     color: $primary-text-color;
     font-family: $main-fonts;
 }
-h1, h2, h3, h4, h5, h6, ul, p {
+h1, h2, h3, h4, h5, h6, ul, p, body {
     margin: 0;
     padding: 0;
 }
@@ -58,18 +58,40 @@ ul {
     overflow: hidden;
 }
 .container {
-    width: 1200px;
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto auto;
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 }
 .container-footer {
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+        width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
 .nav__link,
 .contacts-list__link,
@@ -88,7 +110,7 @@ ul {
 .modal__info-input,
 .button-form,
 .modal-button,
-.close-btn__icon {
+.close-btn__icon, .mobile-menu__close-icon, .mobile-menu__close-btn {
     transition-property: color, fill, background-color, border, border-color, box-shadow, background-image;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

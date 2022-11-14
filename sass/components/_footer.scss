@@ -2,12 +2,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $bcg-dark;
+    min-width: 480px;
 }
 .adress-box {
     display: block;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 76px;
+    }
+    @media screen and (min-width: 1200px) {
+    display: block;
+    padding-left: 0;
+    text-align: inherit;    
+    }
 }
 .logo {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
     display: block;
+    }
 }
 .logo__link {
     display: flex;
@@ -45,12 +62,12 @@
     margin-top: 0px;
 }
 .adress-info__link {
-    color: $secondary-text-color;
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    color: $secondary-text-color;
 
     &:hover, &:focus {
     color: $third-text-color;
@@ -83,8 +100,19 @@
     }
 }
 .socials-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 0;
+    margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
     display: block;
-    margin-left: 70px;
+    margin-left: 70px;    
+    }
 }
 .socials-box__title {
     display: block;
