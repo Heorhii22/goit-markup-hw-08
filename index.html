@@ -29,41 +29,35 @@
 						</svg>
 					</button>
 					<div class="mobile-menu js-menu-container">
-						<div class="container">
-							<button class="mobile-menu__close-btn js-close-menu">
-								<svg class="mobile-menu__close-icon" width="19" height="19">
-									<use href="./images/icons.svg#icon-close-button"></use>
-								</svg>
-							</button>
-							<nav class="mobile-menu__nav">
-								<ul>
-									<li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Студія</a></li>
-									<li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
-									<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
-								</ul>
-							</nav>
-							<ul class="mobile-menu__contacts">
-								<li><a href="tel:+380961111111" class="mobile-menu__tel">+38 096 111 11 11</a></li>
-								<li><a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a></li>
-							</ul>
-							<ul class="mobile-menu__socials">
-								<li class="mobile-menu__socials-item">
-									<a href="#" class="mobile-menu__socials-link">Instagram</a>
-									<span class="mobile-menu__socials-between">|</span>
-								</li>
-								<li class="mobile-menu__socials-item">
-									<a href="#" class="mobile-menu__socials-link">Twitter</a>
-									<span class="mobile-menu__socials-between">|</span>
-								</li>
-								<li class="mobile-menu__socials-item">
-									<a href="#" class="mobile-menu__socials-link">Facebook</a>
-									<span class="mobile-menu__socials-between">|</span>
-								</li>
-								<li class="mobile-menu__socials-item">
-									<a href="#" class="mobile-menu__socials-link">LinkedIn</a>
-								</li>
-							</ul>
-						</div>
+						<button class="mobile-menu__close-btn js-close-menu">
+							<svg class="mobile-menu__close-icon" width="19" height="19">
+								<use href="./images/icons.svg#icon-close-button"></use>
+							</svg>
+						</button>
+
+						<ul class="mobile-menu__nav">
+							<li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current" href="index.html">Студія</a></li>
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+							<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+						</ul>
+						<ul class="mobile-menu__contacts">
+							<li><a href="tel:+380961111111" class="mobile-menu__tel">+38 096 111 11 11</a></li>
+							<li><a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a></li>
+						</ul>
+						<ul class="mobile-social">
+							<li class="mobile-social__item">
+								<a href="" class="mobile-social__link">Instagram</a>
+							</li>
+							<li class="mobile-social__item">
+								<a href="" class="mobile-social__link">Twitter</a>
+							</li>
+							<li class="mobile-social__item">
+								<a href="" class="mobile-social__link">Facebook</a>
+							</li>
+							<li class="mobile-social__item">
+								<a href="" class="mobile-social__link">LinkedIn</a>
+							</li>
+						</ul>
 					</div>
 					<ul class="nav__links">
 						<li class="nav__item">
@@ -99,7 +93,7 @@
 		</header>
 		<main>
 			<section class="hero">
-				<div class="container">
+				<div class="container hero__container">
 					<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 					<button type="button" class="button-main" data-modal-open>Замовити послугу</button>
 					<div class="backdrop is-hidden" data-modal>
@@ -403,7 +397,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container-footer">
+			<div class="container container-footer">
 				<div class="adress-box">
 					<div class="logo">
 						<a class="logo__link" href="./index.html" lang="en">

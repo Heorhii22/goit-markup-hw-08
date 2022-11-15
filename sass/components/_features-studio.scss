@@ -1,11 +1,18 @@
 .section-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media  screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 .features {
-    @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
     align-items: center;
     }
@@ -17,13 +24,16 @@
 
 .features__item {
     display: block;
-    width: 450px;
+    width: 270px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-text-color;
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+    width: 450px;    
+    }
     @media  screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 354px;
@@ -41,7 +51,7 @@
 }
 .features__icon {
     display: flex;
-    width: 450px;
+    width: 270px;
     height: 120px;
     background-color: $bcg-hero-section;
     margin-bottom: 30px;
@@ -49,6 +59,9 @@
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
     @media screen and (min-width: 768px) {
     width: 374px;
     }

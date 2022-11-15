@@ -47,8 +47,8 @@
 }
 
 .footer-form__input {
-    width: 428px;
-    height: 20px;
+    width: calc(100vw - 30px);
+    height: 50px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -58,12 +58,12 @@
     background-color: $bcg-dark;
     color: $secondary-text-color;
     outline: none;
-    @media screen and (min-width: 768px) {
-    width: 450px;
-    height: 50px;    
+    @media screen and (min-width: 480px) {
+    width: 450px;   
     }
     @media screen and (min-width: 1200px) {
     width: 358px;
+    height: 50px;
     }
 }
 

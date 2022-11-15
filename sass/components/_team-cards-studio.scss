@@ -1,15 +1,21 @@
 .team-cards {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $bcg-hero-section;
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: $bcg-hero-section;
-    min-width: 480px;
+    }
 }
 .team-cards__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (min-width: 768px) {
+    font-size: 36px;
+    }
 }
 .team-members {
     display: flex;
@@ -28,11 +34,19 @@
 }
 .team-members__photo {
 display: block;
-max-width: 100%;
+width: 290px;
 height: auto;
 object-fit: cover;
+@media screen and (min-width: 480px) {
+width: 450px;
 }
-
+@media screen and (min-width: 768px) {
+width: 354px;    
+}
+@media screen and (min-width: 1200px) {
+width: 270px;
+}
+}
 .team-members li:first-child {
     margin-left: 0px;
 }
@@ -40,11 +54,14 @@ object-fit: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
+    width: 290px;
     margin-bottom: 30px;
     background-color: $bcg-cards;
     box-shadow: $team-cards-shadow;
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    }
     @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 354px;

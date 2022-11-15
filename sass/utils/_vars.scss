@@ -2,6 +2,7 @@ $primary-text-color: #212121;
 $secondary-text-color: #ffffff;
 $third-text-color: #2196f3;
 $card-text-color: #757575;
+$border-header: #ececec;
 $bcg-cards: #ffffff;
 $bcg-hero-section: #f5f4fa;
 $bcg-gradient-hero: rgba(47, 48, 58, 0.4);
@@ -74,7 +75,6 @@ ul {
         }
 }
 .container-footer {
-        width: 480px;
         padding-left: 15px;
         padding-right: 15px;
     @media screen and (min-width: 768px) {
