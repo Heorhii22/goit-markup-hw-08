@@ -34,7 +34,7 @@
 }
 .team-members__photo {
 display: block;
-width: 270px;
+min-width: 270px;
 height: auto;
 object-fit: cover;
 @media screen and (min-width: 480px) {
@@ -54,7 +54,7 @@ width: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    min-width: 270px;
     margin-bottom: 30px;
     background-color: $bcg-cards;
     box-shadow: $team-cards-shadow;

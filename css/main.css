@@ -795,7 +795,7 @@ ul {
 
 .features__item {
   display: block;
-  width: 270px;
+  min-width: 270px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -833,7 +833,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  min-width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -1005,7 +1005,7 @@ ul {
 
 .team-members__photo {
   display: block;
-  width: 270px;
+  min-width: 270px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1041,7 +1041,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  min-width: 270px;
   margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1189,6 +1189,11 @@ ul {
   display: flex;
   width: 210px;
   height: 92px;
+}
+@media screen and (max-width: 479px) {
+  .company__item {
+    width: calc(50vw - 30px);
+  }
 }
 @media screen and (min-width: 768px) {
   .company__item {
@@ -1961,9 +1966,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .mobile-social__link {

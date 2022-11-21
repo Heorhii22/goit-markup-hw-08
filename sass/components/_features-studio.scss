@@ -24,7 +24,7 @@
 
 .features__item {
     display: block;
-    width: 270px;
+    min-width: 270px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -51,7 +51,7 @@
 }
 .features__icon {
     display: flex;
-    width: 270px;
+    min-width: 270px;
     height: 120px;
     background-color: $bcg-hero-section;
     margin-bottom: 30px;
